@@ -1,6 +1,6 @@
-# Moms Express (momsexpress)
+# Buy and Sell Commerce
 
-MSME Online Market Store
+A Ecommerce platform for different users to carry out trades
 
 ## Install the dependencies
 ```bash
