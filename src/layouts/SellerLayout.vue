@@ -25,7 +25,7 @@
           class="q-mr-md text-center q-py-xs text-weight-bold text-white"
           style=""
         >
-          ©MomsExpress
+          ©Buy and Sell
         </div>
       </div>
     </q-footer>

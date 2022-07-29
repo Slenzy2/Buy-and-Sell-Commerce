@@ -3,7 +3,7 @@
     <div class="column items-center container">
       <h3 class="text-white text-center q-my-auto text-bold">
         Fast and Seamless shopping <br />
-        <span class=""> on MOMS Express</span>
+        <span class=""> on Buy and Sell </span>
       </h3>
     </div>
   </div>

@@ -1,5 +1,5 @@
 <template>
-  <q-page class="relative-position bg-grey-2 padding-footer">
+  <q-page class="relative-position padding-footer">
     <Hero />
     <Categories2 />
     <Recent />

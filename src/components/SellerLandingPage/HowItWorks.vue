@@ -7,7 +7,7 @@
         class="col-lg-4 col-md-4 col-sm-12 col-xs-12 q-my-md text-bold text-center"
       >
         <q-img loading="eager" class="img" src="Seller/digital-signature.png" />
-        <h4>Sign Up on MOMS EXPRESS</h4>
+        <h4>Sign Up on Buy and Sell</h4>
         <p class="text-h6">
           Lorem ipsum dolor sit amet consectetur nditiis nobis eum nulla impedit
           consequatur quia ea!

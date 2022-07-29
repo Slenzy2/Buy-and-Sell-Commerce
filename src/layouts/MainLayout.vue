@@ -1,5 +1,5 @@
 <template>
-  <q-layout :view="value ? 'lHh LpR lFf' : 'lHh LpR lff'">
+  <q-layout :view="value ? 'lHh LpR lFf' : 'lHh LpR lff'" class="bg-grey-2">
     <q-header class="" elevated style="background-color: white">
       <div class="row">
         <Buyers
@@ -89,7 +89,7 @@
       <Footer class="" />
     </q-footer>
 
-    <q-page-container class="">
+    <q-page-container class="main-body">
       <router-view />
     </q-page-container>
   </q-layout>

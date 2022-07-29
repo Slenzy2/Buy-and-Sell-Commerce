@@ -51,9 +51,7 @@
         <div class="text-h6 text-weight-bold">Services</div>
         <div class="text-caption hover_underline_white q-mt-sm">Contact us</div>
         <div class="text-caption hover_underline_white">About Us</div>
-        <div class="text-caption hover_underline_white">
-          Sell on MOMS Express
-        </div>
+        <div class="text-caption hover_underline_white">Sell</div>
       </div>
 
       <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 text-white">
@@ -80,7 +78,7 @@
         class="q-mr-md text-center q-py-xs text-weight-bold text-primary"
         style=""
       >
-        ©MomsExpress
+        ©Buy and Sell
       </div>
     </div>
   </div>

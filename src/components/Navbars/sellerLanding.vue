@@ -7,7 +7,7 @@
       @click="this.$router.push('/')"
     >
       <h6 class="text-primary q-my-none text-bold middle paragraph">
-        MOMS <span class="text-secondary"> EXPRESS </span>
+        Buy and <span class="text-secondary"> Sell </span>
       </h6>
     </q-toolbar-title>
 

@@ -6,7 +6,7 @@
       @click="this.$router.push('/')"
     >
       <p class="text-orange q-my-none text-bold">
-        MOMS <span class="text-white">EXPRESS</span>
+        Buy and <span class="text-white">Sell</span>
       </p>
     </q-toolbar-title>
   </div>

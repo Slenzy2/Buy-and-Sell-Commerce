@@ -6,7 +6,7 @@
         @click="this.$router.push('/')"
         class="text-primary q-my-none text-bold text-h6 paragraph"
       >
-        MOMS <span class="text-secondary"> EXPRESS </span>
+        Buy and <span class="text-secondary"> Sell </span>
       </h6>
     </div>
 

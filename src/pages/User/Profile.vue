@@ -81,7 +81,7 @@
         style="border-radius: 15px"
       >
         <q-item-section>
-          <q-item-label>Sell on MOMS</q-item-label>
+          <q-item-label>Sell</q-item-label>
         </q-item-section>
       </q-item>
 
@@ -141,7 +141,7 @@
         class="q-mr-md text-center q-py-xs text-weight-bold text-primary"
         style=""
       >
-        ©MomsExpress
+        ©Buy and Sell
       </div>
     </div>
     <!-- </q-list> -->

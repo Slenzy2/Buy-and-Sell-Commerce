@@ -99,7 +99,7 @@
       <q-card>
         <q-card-section>
           <div class="text-h6 text-center text-primary text-bold">
-            Welcome to MOMS Express
+            Welcome to Buy and Sell
           </div>
         </q-card-section>
 

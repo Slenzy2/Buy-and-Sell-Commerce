@@ -5,7 +5,7 @@
       <q-list class="rounded-borders">
         <q-expansion-item
           expand-separator
-          label="Why should I sell on MOMS?"
+          label="Why should I sell on this platform?"
           class="bg-secondary q-mb-md"
           header-class="text-subtitle1 text-white"
           style="border: 1px solid grey"
@@ -13,9 +13,9 @@
         >
           <q-card>
             <q-card-section>
-              MOMS is the number one marketplace in Nigeria for indigenous
-              sellers to reach a far wider audience while being part of the
-              largest marketplace in Nigeria.
+              Buy and Sell is the number one marketplace in Nigeria for
+              indigenous sellers to reach a far wider audience while being part
+              of the largest marketplace in Nigeria.
             </q-card-section>
           </q-card>
         </q-expansion-item>
@@ -40,7 +40,7 @@
 
         <q-expansion-item
           expand-separator
-          label="How Do I Get Paid on MOMS?"
+          label="How Do I Get Paid?"
           class="bg-secondary q-mb-md"
           header-class="text-subtitle1 text-white"
           style="border: 1px solid grey"
@@ -48,9 +48,9 @@
         >
           <q-card>
             <q-card-section>
-              MOMS uses a direct payment system via paystack so once your item
-              is purchased the money is directly sent to your registered account
-              number.
+              Buy and Sell uses a direct payment system via paystack so once
+              your item is purchased the money is directly sent to your
+              registered account number.
             </q-card-section>
           </q-card>
         </q-expansion-item>

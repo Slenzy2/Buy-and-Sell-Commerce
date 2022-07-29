@@ -1,7 +1,7 @@
 <template>
   <div class="become text-center q-py-xl">
     <p class="text-dark text-bold text-h3 q-mx-auto q-my-lg">
-      Become a Shop Owner On MOMS Today
+      Become a Shop Owner Today
     </p>
     <q-btn
       color="white"
