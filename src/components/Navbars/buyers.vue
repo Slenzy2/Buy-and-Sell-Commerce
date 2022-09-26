@@ -40,13 +40,15 @@
       >
         <q-list>
           <!-- <q-scroll-area style="height: auto"> -->
-          <router-link
-            class="search"
-            v-for="item in searchResults"
-            :key="item._id"
-            :to="`/details/${item._id}`"
-            >{{ item.name }}</router-link
-          >
+          <q-list-item>
+            <router-link
+              class="search"
+              v-for="item in searchResults"
+              :key="item._id"
+              :to="`/details/${item._id}`"
+              >{{ item.name }}</router-link
+            >
+          </q-list-item>
           <!-- </q-scroll-area> -->
         </q-list>
       </div>

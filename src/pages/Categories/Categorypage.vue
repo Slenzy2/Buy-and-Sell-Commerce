@@ -16,7 +16,12 @@
               <li class="q-pl-sm">
                 <a
                   @mouseenter="show = true"
-                  @click="this.$router.push(`/category/${item.name}`)"
+                  @click="
+                    this.$router.push(
+                      `/category/${item.name}`,
+                      (categoryClicked = true)
+                    )
+                  "
                   class="text-primary text-bold text-caption row items-center ellipsis"
                 >
                   <img :src="item.icon" class="q-mr-xs image" />
@@ -59,6 +64,7 @@
           <Skeleton :skeleton="skeleton" />
           <div
             class="bg-white q-mb-md card text-left"
+            v-show="products"
             v-for="product in products"
             :key="product.id"
           >
@@ -85,6 +91,7 @@ export default {
       categoryName: "",
       skeleton: ref(true),
       filter: ref(""),
+      categoryClicked: false,
 
       class_val: "shadow-1 my-card",
       filters_list: [
@@ -126,6 +133,11 @@ export default {
       ],
     };
   },
+  computed: {
+    watchedRoute() {
+      return this.$route.params.categoryName;
+    },
+  },
 
   methods: {
     addToCart(id) {
@@ -138,9 +150,14 @@ export default {
       this.$store
         .dispatch("moduleExample/getSingleCategory", this.categoryName)
         .then((response) => {
-          console.log(response);
+          // console.log(response);
           this.skeleton = false;
           this.products = response;
+          if (this.categoryName.includes("%20")) {
+            this.categoryName = this.categoryName.split("%20");
+          } else {
+            this.categoryName = this.categoryName.split("_");
+          }
         });
     },
     getEasyBudgetProducts() {
@@ -173,13 +190,13 @@ export default {
       });
     },
     filterProduct(range) {
-      console.log(range);
+      // console.log(range);
       let a = this.products.filter((item) => {
         if (item.price <= 25000) {
           return item;
         }
       });
-      console.log(a);
+      // console.log(a);
     },
     getCategories() {
       this.$store.dispatch("moduleExample/getCategories").then((response) => {
@@ -203,6 +220,13 @@ export default {
     } else {
       this.categoryName = this.categoryName.split("_");
     }
+  },
+  watch: {
+    watchedRoute: function () {
+      console.log("happy");
+      this.categoryName = this.$route.params.categoryName;
+      this.getProducts();
+    },
   },
 };
 </script>

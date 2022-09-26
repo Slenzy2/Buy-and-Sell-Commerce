@@ -27,6 +27,7 @@
           <q-carousel-slide
             v-for="(image, index) in product.img"
             :key="image.key"
+            loading="eager"
             :name="index"
             :img-src="image.url"
           />
@@ -225,7 +226,7 @@ export default {
       comments: [],
       skeleton: true,
 
-      slide: 1,
+      slide: 0,
       tab: "Ratings",
       rating_point: 3.5,
       rat_5: 5,
