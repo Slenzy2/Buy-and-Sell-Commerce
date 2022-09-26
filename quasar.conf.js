@@ -30,7 +30,7 @@ module.exports = configure(function (ctx) {
       "mdi-v5",
       "fontawesome-v5",
       "eva-icons",
-      'themify',
+      "themify",
       // 'line-awesome',
       // 'roboto-font-latin-ext', // this or either 'roboto-font', NEVER both!
 
@@ -201,7 +201,7 @@ module.exports = configure(function (ctx) {
       builder: {
         // https://www.electron.build/configuration/configuration
 
-        appId: "momsexpress",
+        appId: "buyandsell",
       },
 
       // "chain" is a webpack-chain object https://github.com/neutrinojs/webpack-chain

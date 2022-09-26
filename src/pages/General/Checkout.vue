@@ -94,9 +94,9 @@ export default {
       //Paystack
       publicKey: "pk_test_285bb7525b2d3876efffce201f7a271d7c809839",
       amount: localStorage.getItem("cartTotal") * 100,
-      email: "momsexpress@gmail.com",
-      firstname: "MomS",
-      lastname: "Express",
+      email: "tobi@gmail.com",
+      firstname: "Tobi",
+      lastname: "Ikupolati",
       metadata: {
         custom_fields: [
           {

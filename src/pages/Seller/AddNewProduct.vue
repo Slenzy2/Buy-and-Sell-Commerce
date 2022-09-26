@@ -176,12 +176,15 @@ export default {
         let a;
         reader.onload = (e) => {
           a = e.target.result;
-          this.images.push(a);
+          if (!this.images.includes(a)) {
+            this.images.push(a);
+          }
         };
         reader.readAsDataURL(this.arr[i]);
         this.$emit("fileInput", this.arr[i]);
       }
       console.log(this.arr);
+      console.log(this.images);
     },
     addProduct() {
       console.log("hello");
