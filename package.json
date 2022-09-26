@@ -1,8 +1,8 @@
 {
-  "name": "buyandsell",
+  "name": "BuyandSell",
   "version": "0.0.1",
-  "description": "MSME Online Market Store",
-  "productName": "Moms Express",
+  "description": "BuyandSellOnline Market Store",
+  "productName": "buyandsell",
   "author": "Isah Raphael <33344810+realralphg@users.noreply.github.com>",
   "private": true,
   "scripts": {
