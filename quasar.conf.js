@@ -136,9 +136,9 @@ module.exports = configure(function (ctx) {
       },
 
       manifest: {
-        name: `Moms Express`,
-        short_name: `Moms Express`,
-        description: `MSME Online Market Store`,
+        name: `Buy and Sell`,
+        short_name: `Buy and Sell`,
+        description: `Buy and Sell Online Market Store`,
         display: "standalone",
         orientation: "portrait",
         background_color: "#ffffff",
