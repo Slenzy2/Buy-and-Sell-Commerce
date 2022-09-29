@@ -40,7 +40,7 @@
         side
         top
         :class="toggle === 'Disabled' ? 'disable-text' : ''"
-        class="text-h6 text-bold text-secondary"
+        class="text-h6 text-bold text-orange"
       >
         <q-item-label>N{{ product.price }}.00</q-item-label>
       </q-item-section>
@@ -52,7 +52,7 @@
       >
         <q-item-label>
           <q-btn
-            color="secondary"
+            color="orange"
             outline
             label="Edit Product"
             no-caps

@@ -26,7 +26,7 @@
 
     <q-space class="hide_me" />
 
-    <router-link to="/" class="items-center row link text-secondary"
+    <router-link to="/" class="items-center row link text-orange"
       >View Store <q-icon name="link" size="1.5rem" class="q-ml-sm" />
     </router-link>
 
@@ -36,7 +36,7 @@
       icon=" star_rate"
       flat
       text-color="white"
-      class="q-px-sm bg-secondary q-ml-md bordered-btn"
+      class="q-px-sm bg-orange q-ml-md bordered-btn"
       dense
     />
 
@@ -46,7 +46,7 @@
       </q-avatar>
     </q-btn>
 
-    <router-link to="/" class="items-center q-ml-md row link text-secondary">
+    <router-link to="/" class="items-center q-ml-md row link text-orange">
       <q-icon name="chat_bubble_outline" size="1.5rem" class="q-mr-sm" />
       Get Help
     </router-link>

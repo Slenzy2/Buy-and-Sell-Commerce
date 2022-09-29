@@ -95,7 +95,7 @@ export default {
   data() {
     return {
       products: [],
-      stars: 5,
+      stars: ref("5"),
       skeleton: ref(true),
     };
   },

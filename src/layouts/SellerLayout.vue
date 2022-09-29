@@ -11,7 +11,7 @@
       v-model="leftDrawerOpen"
       show-if-above
       :width="230"
-      class="drawer text-white bg-secondary"
+      class="drawer text-white bg-primary"
       :breakpoint="830"
     >
       <q-list>

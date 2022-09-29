@@ -140,10 +140,17 @@ export default defineComponent({
   },
   methods: {
     registerBuyer() {
-      this.$store.dispatch("moduleExample/buyerRegister", {
-        email: this.email,
-      });
-      this.alert = true;
+      this.$store
+        .dispatch("moduleExample/buyerRegister", {
+          email: this.email,
+        })
+        .then((resp) => {
+          console.log(resp);
+          this.alert = true;
+        })
+        .catch((error) => {
+          console.log(error);
+        });
     },
   },
 });

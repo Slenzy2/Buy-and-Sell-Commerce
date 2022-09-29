@@ -3,6 +3,7 @@
     <div class="secondary text-h4 text-bold q-my-sm">General Settings</div>
 
     <!-- <ProductItem v-for="n in 5" :key="n" /> -->
+    <div>Nothing Here</div>
   </q-page>
 </template>
 

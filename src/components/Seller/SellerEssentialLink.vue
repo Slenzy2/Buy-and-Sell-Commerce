@@ -116,7 +116,7 @@ export default defineComponent({
       localStorage.removeItem("role");
 
       this.$store.commit("moduleExample/logout");
-      this.$router.replace("/");
+      window.location.href = "/";
     },
   },
   mounted() {

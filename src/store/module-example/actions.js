@@ -428,7 +428,7 @@ export function buyerLogin(commit, data) {
     })
       .then(({ data, status }) => {
         if (status === 200 || status === 201) {
-          this.$router.push("/");
+          window.location.href = "/";
           Notify.create({
             message: "Login Success",
             color: "blue",

@@ -1,10 +1,10 @@
 <template>
   <q-page class="q-px-xl">
-    <div class="secondary text-h4 text-bold q-my-sm">Orders</div>
+    <div class="orange text-h4 text-bold q-my-sm">Orders</div>
 
-    <div class="row q-mb-md q-gutter-x-sm">
+    <!-- <div class="row q-mb-md q-gutter-x-sm">
       <q-btn-dropdown
-        color="secondary"
+        color="orange"
         outline
         no-caps=""
         label="Filter"
@@ -41,20 +41,20 @@
           <q-icon name="search" />
         </template>
       </q-input>
-    </div>
+    </div> -->
 
-    <div class="row justify-between q-mb-md">
+    <!-- <div class="row justify-between q-mb-md">
       <q-space />
 
       <q-btn
-        flat
         icon="delete_forever"
         label="Delete Order"
         no-caps
-        class="bg-secondary bordered-btn"
-        text-color="white"
+        outline
+        color="red"
+        class="bordered-btn"
       />
-    </div>
+    </div> -->
 
     <q-list
       bordered
@@ -105,10 +105,10 @@
           </div>
         </q-item-section>
 
-        <q-item-section side top class="text-h6 text-bold text-secondary">
+        <q-item-section side top class="text-h6 text-bold text-orange">
           <q-item-label>
             <q-btn-dropdown
-              color="secondary"
+              color="orange"
               outline
               label="Order Status"
               no-caps

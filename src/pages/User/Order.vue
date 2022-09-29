@@ -15,7 +15,7 @@
     </div>
 
     <q-page
-      v-if="!orders[0] && skeleton === false"
+      v-if="(orders = [])"
       style="margin: 0 auto"
       class="column flex-center"
     >
@@ -25,7 +25,10 @@
       <q-icon name="shopping_cart" size="3rem" color="primary" />
     </q-page>
 
-    <div :class="skeleton === false ? 'hide-skeleton' : ''">
+    <!-- <div
+      v-show="(orders = [])"
+      :class="skeleton === false ? 'hide-skeleton' : ''"
+    >
       <q-skeleton
         v-model="skeleton"
         type="rect"
@@ -34,7 +37,7 @@
         v-for="n in 7"
         :key="n"
       />
-    </div>
+    </div> -->
 
     <div
       v-show="orders[0]"
@@ -115,13 +118,20 @@ export default {
         });
     },
     getOrders() {
-      this.$store.dispatch("moduleExample/getBuyerOrders").then((response) => {
-        this.orders = response;
-        if (!response[0]) {
+      this.$store
+        .dispatch("moduleExample/getBuyerOrders")
+        .then((response) => {
+          if (!response[0]) {
+            this.skeleton = false;
+          }
+          this.orders = response;
           this.skeleton = false;
-        }
-        this.skeleton = false;
-      });
+        })
+        .catch((error) => {
+          if (error) {
+            this.skeleton === false;
+          }
+        });
     },
     item(item) {
       // console.log(JSON.parse(item));

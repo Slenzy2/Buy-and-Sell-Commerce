@@ -1,6 +1,6 @@
 <template>
   <q-page class="q-pa-xl">
-    <div class="secondary text-h4 text-bold q-my-sm">Products</div>
+    <div class="orange text-h4 text-bold q-my-sm">Products</div>
     <div class="row justify-between q-mb-md">
       <div class="row q-gutter-x-md">
         <q-btn
@@ -14,7 +14,7 @@
         />
         <!-- <q-btn
           outline
-          color="secondary"
+          color="orange"
           class="bordered-btn"
           label="Bulk Edit All"
           no-caps
@@ -27,19 +27,19 @@
         /> -->
       </div>
 
-      <q-btn
-        flat
+      <!-- <q-btn
         icon="delete_forever"
         label="Delete Product"
         no-caps
-        class="bg-secondary bordered-btn"
-        text-color="white"
-      />
+        outline
+        color="red"
+        class="bordered-btn"
+      /> -->
     </div>
 
-    <div class="row q-mb-md q-gutter-x-sm">
+    <!-- <div class="row q-mb-md q-gutter-x-sm">
       <q-btn-dropdown
-        color="secondary"
+        color="orange"
         outline
         no-caps=""
         label="Filter"
@@ -76,7 +76,7 @@
           <q-icon name="search" />
         </template>
       </q-input>
-    </div>
+    </div> -->
 
     <ProductItem
       v-for="product in products"
