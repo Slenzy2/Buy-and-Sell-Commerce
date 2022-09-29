@@ -42,9 +42,8 @@
               </div>
               <div class="row">
                 <q-rating
-                  class=""
-                  v-model="stars"
-                  :max="5"
+                  v-model="starsItem"
+                  max="5"
                   size="0.7rem"
                   color="orange-7"
                 />
@@ -90,12 +89,12 @@ import ProductCard from "../../components/ProductCard.vue";
 import Skeleton from "../Skeleton.vue";
 
 export default {
-  name: "Recent",
+  name: "Trending",
   components: { ProductCard, Skeleton },
   data() {
     return {
       products: [],
-      stars: ref("5"),
+      starsItem: ref(5),
       skeleton: ref(true),
     };
   },

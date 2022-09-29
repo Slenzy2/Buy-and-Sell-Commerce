@@ -43,7 +43,7 @@
               <div class="row">
                 <q-rating
                   class=""
-                  v-model="stars"
+                  v-model="starsItem"
                   :max="5"
                   size="0.7rem"
                   color="orange-7"
@@ -96,7 +96,7 @@ export default {
   data() {
     return {
       products: [],
-      stars: 5,
+      starsItem: 5,
       skeleton: ref(true),
     };
   },

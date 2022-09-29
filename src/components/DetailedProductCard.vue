@@ -17,7 +17,7 @@
         </div>
         <q-rating
           class=""
-          v-model="stars"
+          v-model="starsItem"
           :max="5"
           size="0.7rem"
           color="primary"
@@ -85,7 +85,7 @@ export default {
   },
   data() {
     return {
-      stars: 4,
+      starsItem: 4,
       val: ref(false),
     };
   },

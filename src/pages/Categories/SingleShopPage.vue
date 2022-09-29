@@ -115,7 +115,7 @@
                   <div class="row">
                     <q-rating
                       class=""
-                      v-model="stars"
+                      v-model="starsItem"
                       :max="5"
                       size="0.7rem"
                       color="primary"
@@ -164,7 +164,7 @@ export default {
       productsIds: [],
       products: [],
       image: "",
-      stars: ref(4),
+      starsItem: ref(4),
       skeleton: ref(true),
       shopName: "",
       noProduct: ref(false),

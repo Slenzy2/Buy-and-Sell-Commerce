@@ -66,7 +66,7 @@ import { ref } from "vue";
 export default {
   data() {
     return {
-      stars: ref(5),
+      starsItem: ref(5),
     };
   },
 };

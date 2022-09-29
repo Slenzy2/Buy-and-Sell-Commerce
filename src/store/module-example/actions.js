@@ -35,7 +35,11 @@ export function sellerRegister(
           resolve();
         }
       })
-      .catch((error) => {
+      .catch((response) => {
+        Notify.create({
+          message: response.message,
+          color: "red",
+        });
         reject();
       });
   });
@@ -72,6 +76,10 @@ export function sellerLogin({ commit }, { email, password }) {
       })
       .catch((error) => {
         // console.log(error);
+        Notify.create({
+          message: "Error trying to login. Please check your credentials",
+          color: "red",
+        });
         reject();
       });
   });
@@ -100,7 +108,7 @@ export function addProduct(context, data) {
           resolve(data);
         } else {
           Notify.create({
-            message: "Error sending message. Please retry.",
+            message: "Error Uploading Product. Please retry.",
             color: "red",
           });
           reject();
@@ -109,7 +117,7 @@ export function addProduct(context, data) {
       .catch((error) => {
         console.log(error);
         Notify.create({
-          message: "Error sending message. Please retry.",
+          message: "Error Uploading Product. Please retry.",
           color: "red",
         });
         reject();
@@ -416,32 +424,39 @@ export function buyerRegister(context, { email }) {
   });
 }
 
-export function buyerLogin(commit, data) {
+export function buyerLogin(commit, form) {
   return new Promise((resolve, reject) => {
     axios({
       method: "POST",
       url: baseurl + "/login",
       data: {
-        email: data.email,
-        password: data.password,
+        email: form.email,
+        password: form.password,
       },
     })
-      .then(({ data, status }) => {
-        if (status === 200 || status === 201) {
-          window.location.href = "/";
-          Notify.create({
-            message: "Login Success",
-            color: "blue",
-          });
-          console.log(data);
-          let buyer = data.data.user;
-          localStorage.setItem("user", JSON.stringify(buyer));
-          localStorage.setItem("userName", user.fullname);
-          commit("user", JSON.stringify(buyer));
-        }
-        resolve(buyer);
+      .then(({ data }) => {
+        console.log(data);
+        // if (data) {
+        Notify.create({
+          message: "Login Success",
+          color: "blue",
+        });
+        //   console.log(data);
+        let buyer = data.data.user;
+        localStorage.setItem("user", JSON.stringify(buyer));
+        localStorage.setItem("userName", buyer.fullname);
+        // commit("user", buyer);
+        window.location.href = "/";
+        // }
+        resolve();
       })
       .catch((error) => {
+        if (error) {
+          Notify.create({
+            message: "Error trying to login. Please check your credentials",
+            color: "red",
+          });
+        }
         reject();
       });
   });
